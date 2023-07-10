@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Title -->
-    <title>User</title>
+    <title>Chi-siamo</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -34,7 +34,13 @@
 
 
 <body>
-    <h1>User : {{$name}}</h1>
+    <h1>La nostra azienda è composta da :</h1>
+    <ul>
+        @foreach ($family as $family_member)
+        <li>{{ $family_member }}</li>
+        @endforeach
+    </ul>
+
     <a href="http://127.0.0.1:8001/" class="button-link">Torna alla Home Page</a>
 
 </body>

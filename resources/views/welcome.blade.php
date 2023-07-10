@@ -53,7 +53,8 @@
 <body>
     <header class="container">
         <ul>
-            <li><a href="http://127.0.0.1:8001/user">User-page</a></li>
+            <li><a href="http://127.0.0.1:8001/user">User</a></li>
+            <li><a href="http://127.0.0.1:8001/chi-siamo">Chi siamo</a></li>
         </ul>
 
     </header>
