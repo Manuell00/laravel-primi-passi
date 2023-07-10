@@ -11,11 +11,31 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <style>
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: dodgerblue;
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+            border-radius: 10px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .button-link:hover {
+            background-color: deepskyblue;
+        }
+    </style>
+
 </head>
 
 
 <body>
-    <h1>Root spostata</h1>
+    <h1>User : {{$name}}</h1>
+    <a href="http://127.0.0.1:8001/" class="button-link">Torna alla Home Page</a>
 
 </body>
 

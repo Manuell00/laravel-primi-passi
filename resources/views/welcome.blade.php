@@ -11,11 +11,52 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <style>
+        header {
+            background-color: dodgerblue;
+            height: 150px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            list-style-type: none;
+        }
+
+        li {
+            font-size: 16px;
+            font-weight: 600;
+            transition: transform 0.7s ease-in-out;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        li:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+
 </head>
 
 
 <body>
-    <h1>Hi I'm Manuel, how are u?</h1>
+    <header class="container">
+        <ul>
+            <li><a href="http://127.0.0.1:8001/user">User-page</a></li>
+        </ul>
+
+    </header>
 
 </body>
 

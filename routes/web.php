@@ -21,5 +21,10 @@ Route::get('/', function () {
 
 // Creo la root per lo user
 Route::get('/user', function () {
-    return view('user');
+
+    // Definiso la variabile del'user-name
+    $name = 'Manuel';
+
+    // Ritorno la view con i relativi dati che mi serviranno
+    return view('user', compact('name'));
 });
